@@ -1,0 +1,21 @@
+mutation AddProduct($id: Int!, $name: String!,$price:Float!,$category:Int!,$vendor:Int!){
+  addProduct(id:$id, name:$name, price:$price, category:$category,vendor:$vendor) {
+	id
+  }
+}
+
+
+
+mutation DeleteProduct($id: Int!){
+  deleteProduct(id:$id) {
+	id
+  }
+}
+
+
+
+mutation UpdateProduct($id: Int!, $name: String!,$price:Float!,$vendor:Int!){
+  updateProduct(id:$id, name:$name, price:$price,vendor:$vendor) {
+	id
+  }
+}

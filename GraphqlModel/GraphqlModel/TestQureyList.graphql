@@ -1,0 +1,24 @@
+query ProudctList {
+  products {
+	name
+	price
+	id
+	vendor {
+	  name
+	  id
+	}
+  }
+}
+
+
+query ProudctFilterList {
+  products {
+	name
+	id
+   vendor {
+	  name
+	  id
+	}
+
+  }
+}
